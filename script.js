@@ -98,7 +98,7 @@ function testeSabedoria1(){
     var sucessoTesteSabedoria1=document.getElementById("sucessoTesteSabedoria1")
     var falhaTesteSabedoria1=document.getElementById("falhaTesteSabedoria1")
     var sabedoria1=document.getElementById("sabedoria")
-    sabedoria2 += Math.floor(Math.random() * 8) + 1;
+    sabedoria2 = sabedoria2 + (Math.floor(Math.random() * 8) + 1);
     if (sabedoria2 > 6) {
         sucessoTesteSabedoria1.style.display = "block";        
     } else {
@@ -117,7 +117,7 @@ function testeInteligencia1(){
     var sucessoTesteInteligencia1=document.getElementById("sucessoTesteInteligencia1")
     var falhaTesteInteligencia1=document.getElementById("falhaTesteInteligencia1")
     var inteligencia1 = document.getElementById("inteligencia")
-    inteligencia2 += Math.floor(Math.random() * 8) + 1;
+    inteligencia2 = inteligencia2 + (Math.floor(Math.random() * 8) + 1);
     if (inteligencia2 > 6) {
         sucessoTesteInteligencia1.style.display = "block";        
     } else {
@@ -168,7 +168,7 @@ function testeAgilidade1(){
     var sucessoTesteAgilidade1=document.getElementById("sucessoTesteAgilidade1")
     var falhaTesteAgilidade1=document.getElementById("falhaTesteAgilidade1")
     var agilidade1 = document.getElementById("agilidade")
-    agilidade2 += Math.floor(Math.random() * 8) + 1;
+    agilidade2 = agilidade2 + (Math.floor(Math.random() * 8) + 1);
     if (agilidade2 > 6) {
         sucessoTesteAgilidade1.style.display = "block";        
     } else {
@@ -182,7 +182,7 @@ function testeCarisma1(){
     var falhaTesteCarisma1=document.getElementById("falhaTesteCarisma1")
     var proximaFrase=document.getElementById("proximaFrase")
     var carisma1 = document.getElementById("carisma")
-    carisma2 += Math.floor(Math.random() * 8) + 1;
+    carisma2 = carisma2 + (Math.floor(Math.random() * 8) + 1);
     if (carisma2 > 6) {
         sucessoTesteCarisma1.style.display = "block";        
     } else {
@@ -207,67 +207,118 @@ function parabens2(){
 function testeForca2(){
     var sucessoTesteForca2=document.getElementById("sucessoTesteForca2")
     var falhaTesteForca2=document.getElementById("falhaTesteForca2")
-    forca2 += Math.floor(Math.random() * 8) + 1;
+    var forca1 = document.getElementById("forca")
+    forca2 = forca2 + (Math.floor(Math.random() * 8) + 1);
     if (forca2 > 8) {
         sucessoTesteForca2.style.display = "block";        
     } else {
         falhaTesteForca2.style.display = "block";
-    }
+    }    
+    forca2 = forca1.value
 }
 
 function testeAgilidade2(){
     var sucessoTesteAgilidade2=document.getElementById("sucessoTesteAgilidade2")
     var falhaTesteAgilidade2=document.getElementById("falhaTesteAgilidade2")
-    agilidade2 += Math.floor(Math.random() * 8) + 1;
+    var agilidade1 = document.getElementById("agilidade")
+    agilidade2 = agilidade2 + (Math.floor(Math.random() * 8) + 1);
     if (agilidade2 > 8) {
         sucessoTesteAgilidade2.style.display = "block";        
     } else {
         falhaTesteAgilidade2.style.display = "block";
     }
+    agilidade2 = agilidade1.value
 }
 
 function testeAgilidade3(){
     var sucessoTesteAgilidade3=document.getElementById("sucessoTesteAgilidade3")
     var falhaTesteAgilidade3=document.getElementById("falhaTesteAgilidade3")
-    agilidade2 += Math.floor(Math.random() * 8) + 1;
+    var agilidade1 = document.getElementById("agilidade")
+    agilidade2 = agilidade2 + (Math.floor(Math.random() * 8) + 1);
     if (agilidade2 > 8) {
         sucessoTesteAgilidade3.style.display = "block";        
     } else {
         falhaTesteAgilidade3.style.display = "block";
     }
+    agilidade2 = agilidade1.value
 }
 
 function testeAgilidade4(){
     var sucessoTesteAgilidade4=document.getElementById("sucessoTesteAgilidade4")
     var falhaTesteAgilidade4=document.getElementById("falhaTesteAgilidade4")
-    agilidade2 += Math.floor(Math.random() * 8) + 1;
+    var agilidade1 = document.getElementById("agilidade")
+    agilidade2 = agilidade2 + (Math.floor(Math.random() * 8) + 1);
     if (agilidade2 > 8) {
         sucessoTesteAgilidade4.style.display = "block";        
     } else {
         falhaTesteAgilidade4.style.display = "block";
     }
+    agilidade2 = agilidade1.value
 }
 
 function testeAgilidade5(){
     var sucessoTesteAgilidade5=document.getElementById("sucessoTesteAgilidade5")
     var falhaTesteAgilidade5=document.getElementById("falhaTesteAgilidade5")
-    agilidade2 += Math.floor(Math.random() * 8) + 1;
+    var agilidade1 = document.getElementById("agilidade")
+    agilidade2 = agilidade2 + (Math.floor(Math.random() * 8) + 1);
     if (agilidade2 > 8) {
         sucessoTesteAgilidade5.style.display = "block";        
     } else {
         falhaTesteAgilidade5.style.display = "block";
     }
+    agilidade2 = agilidade1.value
+}
+
+function testeResistencia2(){
+    var sucessoTesteResistencia2=document.getElementById("sucessoTesteResistencia2")
+    var falhaTesteResistencia2=document.getElementById("falhaTesteResistencia2")
+    var resistencia1=document.getElementById("resistencia")
+    resistencia2 = resistencia2 + (Math.floor(Math.random() * 8) + 1);
+    if (resistencia2 > 8) {
+        sucessoTesteResistencia2.style.display = "block";        
+    } else {
+        falhaTesteResistencia2.style.display = "block";
+    }
+    resistencia2 = resistencia1.value
+}
+
+function testeResistencia3(){
+    var sucessoTesteResistencia3=document.getElementById("sucessoTesteResistencia3")
+    var falhaTesteResistencia3=document.getElementById("falhaTesteResistencia3")
+    var resistencia1=document.getElementById("resistencia")
+    resistencia2 = resistencia2 + (Math.floor(Math.random() * 8) + 1);
+    if (resistencia2 > 8) {
+        sucessoTesteResistencia3.style.display = "block";        
+    } else {
+        falhaTesteResistencia3.style.display = "block";
+    }
+    resistencia2 = resistencia1.value
+}
+
+function testeResistencia4(){
+    var sucessoTesteResistencia4=document.getElementById("sucessoTesteResistencia4")
+    var falhaTesteResistencia4=document.getElementById("falhaTesteResistencia4")
+    var resistencia1=document.getElementById("resistencia")
+    resistencia2 = resistencia2 + (Math.floor(Math.random() * 8) + 1);
+    if (resistencia2 > 8) {
+        sucessoTesteResistencia4.style.display = "block";        
+    } else {
+        falhaTesteResistencia4.style.display = "block";
+    }
+    resistencia2 = resistencia1.value
 }
 
 function testeResistencia1(){
     var sucessoTesteResistencia1=document.getElementById("sucessoTesteResistencia1")
     var falhaTesteResistencia1=document.getElementById("falhaTesteResistencia1")
-    resistencia2 += Math.floor(Math.random() * 8) + 1;
+    var resistencia1=document.getElementById("resistencia")
+    resistencia2 = resistencia2 + (Math.floor(Math.random() * 8) + 1);
     if (resistencia2 > 8) {
         sucessoTesteResistencia1.style.display = "block";        
     } else {
         falhaTesteResistencia1.style.display = "block";
     }
+    resistencia2 = resistencia1.value
 }
 
 function parabens3(){
@@ -285,32 +336,38 @@ function morreu(){
 function testeInteligencia2(){
     var sucessoTesteInteligencia2=document.getElementById("sucessoTesteInteligencia2")
     var falhaTesteInteligencia2=document.getElementById("falhaTesteInteligencia2")
+    var inteligencia2=document.getElementById("inteligencia")
     inteligencia2 += Math.floor(Math.random() * 8) + 1;
     if (inteligencia2 > 8) {
         sucessoTesteInteligencia2.style.display = "block";        
     } else {
         falhaTesteInteligencia2.style.display = "block";
     }
+    inteligencia2 = inteligencia1.value
 }
 
 function testeSabedoria2(){
     var sucessoTesteSabedoria2=document.getElementById("sucessoTesteSabedoria2")
     var falhaTesteSabedoria2=document.getElementById("falhaTesteSabedoria2")
+    var sabedoria1=document.getElementById("sabedoria")
     sabedoria2 += Math.floor(Math.random() * 8) + 1;
     if (sabedoria2 > 8) {
         sucessoTesteSabedoria2.style.display = "block";        
     } else {
         falhaTesteSabedoria2.style.display = "block";
     }
+    sabedoria2 = sabedoria1.value
 }
 
 function testeCarisma2(){
     var sucessoTesteCarisma2=document.getElementById("sucessoTesteCarisma2")
     var falhaTesteCarisma2=document.getElementById("falhaTesteCarisma2")
+    var carisma1=document.getElementById("carisma")
     carisma2 += Math.floor(Math.random() * 8) + 1;
     if (carisma2 > 8) {
         sucessoTesteCarisma2.style.display = "block";        
     } else {
         falhaTesteCarisma2.style.display = "block";
     }
+    carisma2 = carisma1.value
 }

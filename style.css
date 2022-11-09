@@ -2,8 +2,14 @@ body {
     display: flex;
     justify-content: center;
     padding: 2vw;
-    font-family: 'Times New Roman', Times, serif;
     font-size: x-large;
+    background-color: #333;    
+    color: rgb(180, 180, 180);
+    font-family: consolas;
+}
+
+.container {
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
 }
 
 div {
@@ -14,10 +20,6 @@ div {
     border-radius: 2px;
     padding: 1vw;
     transition: 0.5s;
-}
-
-.row:hover {
-    box-shadow: -10px 10px 10px;
 }
 
 button {
