@@ -26,6 +26,9 @@ function nome(){
 function comecar2(){
     vida2 = vida
     vida3.innerHTML = `${vida2}`
+    var fraseBora1 = document.getElementById("fraseBora1")
+    fraseBora1.style.display = "block";
+
 }
 
 function bora1(){
@@ -95,6 +98,8 @@ function carisma(){
 }
 
 function testeSabedoria1(){
+    var fraseBora2 = document.getElementById("fraseBora2")
+    fraseBora2.style.display = "block";
     var sucessoTesteSabedoria1=document.getElementById("sucessoTesteSabedoria1")
     var falhaTesteSabedoria1=document.getElementById("falhaTesteSabedoria1")
     var sabedoria1=document.getElementById("sabedoria")
@@ -114,6 +119,8 @@ function cincoDeDano(){
 }
 
 function testeInteligencia1(){
+    var fraseBora3 = document.getElementById("fraseBora3")
+    fraseBora3.style.display = "block";
     var sucessoTesteInteligencia1=document.getElementById("sucessoTesteInteligencia1")
     var falhaTesteInteligencia1=document.getElementById("falhaTesteInteligencia1")
     var inteligencia1 = document.getElementById("inteligencia")
@@ -152,6 +159,8 @@ function maisUmAtributos2(){
 }*/
 
 function testeForca1(){
+    var fraseBora4 = document.getElementById("fraseBora4")
+    fraseBora4.style.display = "block";
     var sucessoTesteForca1=document.getElementById("sucessoTesteForca1")
     var falhaTesteForca1=document.getElementById("falhaTesteForca1")
     var forca1 = document.getElementById("forca")
@@ -165,6 +174,8 @@ function testeForca1(){
 }
 
 function testeAgilidade1(){
+    var fraseBora5 = document.getElementById("fraseBora5")
+    fraseBora5.style.display = "block";
     var sucessoTesteAgilidade1=document.getElementById("sucessoTesteAgilidade1")
     var falhaTesteAgilidade1=document.getElementById("falhaTesteAgilidade1")
     var agilidade1 = document.getElementById("agilidade")

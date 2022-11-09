@@ -54,7 +54,7 @@
                     <span for="sabedoria3">Sabedoria </span><span id="sabedoria3"></span>,
                     <span for="carisma3">Carisma </span><span id="carisma3"></span>.
                 </div>
-                <div>
+                <div id="fraseBora1" style="display: none;">
                     <span>Olá, </span><span id="nome3"></span><span>, sua aventura começa agora!</span> <button type="button" onclick="bora1()">Iniciar</button>
                 </div>
             </div>
@@ -62,23 +62,34 @@
         <div class="row" style="display: none;" id="frase1">
             <span>Ao acordar, você sente um cheiro familiar... </span><button type="button" onclick="testeSabedoria1()">TESTE SABEDORIA</button>
             <div style="display: none;" id="sucessoTesteSabedoria1">Sucesso: Você percebe um cheiro de queimado e rapidamente se levanta da sua cama, escapando por pouco de uma labareda!</div>
-            <div style="display: none;" id="falhaTesteSabedoria1">Falha: você não dá bola para o cheiro e, logo depois, é atingido por uma labareda de fogo no meio da sua cama... <button type="button" onclick="cincoDeDano()">5 PONTOS DE DANO</button></div>
+            <div style="display: none;" id="falhaTesteSabedoria1">Falha: você não dá bola para o cheiro e, logo depois, é atingido por uma labareda de fogo no meio da sua cama... <button type="button" onclick="cincoDeDano()">5 PONTOS DE DANO</button></div>            
+        </div>
+        <div class="row" style="display: none;" id="fraseBora2">
             <button type="button" onclick="bora2()">Avançar</button>
         </div>
         <div class="row" style="display: none;" id="frase2">
             <span>Você sai de sua casa em desespero... </span><button type="button" onclick="testeInteligencia1()">TESTE INTELIGÊNCIA</button>
             <div style="display: none;" id="sucessoTesteInteligencia1">Sucesso: mas, não antes de pegar sua espada e armadura. <button type="button" onclick="maisUmAtributos1()">+1 EM FOR, AGI e RES</button></div>
-            <div style="display: none;" id="falhaTesteInteligencia1">Falha: deixando tudo para trás...</div><button type="button" onclick="bora3()">Avançar</button>
+            <div style="display: none;" id="falhaTesteInteligencia1">Falha: deixando tudo para trás...</div>
+        </div>
+        <div class="row" style="display: none;" id="fraseBora3">
+            <button type="button" onclick="bora3()">Avançar</button>
         </div>
         <div class="row" style="display: none;" id="frase3">
             <span>A porta está emperrada... </span><button type="button" onclick="testeForca1()">TESTE FORÇA</button>
             <div style="display: none;" id="sucessoTesteForca1">Sucesso: mas você consegue arrombar com facilidade!</div>
-            <div style="display: none;" id="falhaTesteForca1">Falha: e você arromba com dificuldade, machucando seu ombro... <button type="button" onClick="cincoDeDano()">5 PONTOS DE DANO</button></div><button type="button" onclick="bora4()">Avançar</button>
+            <div style="display: none;" id="falhaTesteForca1">Falha: e você arromba com dificuldade, machucando seu ombro... <button type="button" onClick="cincoDeDano()">5 PONTOS DE DANO</button></div>
+        </div>
+        <div class="row" id="fraseBora4" style="display: none;">
+            <button type="button" onclick="bora4()">Avançar</button>
         </div>
         <div class="row" style="display: none;" id="frase4">
             <span>Destroços em chamas caem sobre você... </span><button type="button" onclick="testeAgilidade1()">TESTE AGILIDADE</button>
             <div style="display: none;" id="sucessoTesteAgilidade1">Sucesso: e você, velozmente, esquiva!</div>
-            <div style="display: none;" id="falhaTesteAgilidade1">Falha: acertando em cheio sua cabeça... <button type="button" onClick="cincoDeDano()">5 PONTOS DE DANO</button></div><button type="button" onclick="bora5()">Avançar</button>
+            <div style="display: none;" id="falhaTesteAgilidade1">Falha: acertando em cheio sua cabeça... <button type="button" onClick="cincoDeDano()">5 PONTOS DE DANO</button></div>
+        </div>
+        <div class="row" style="display: none;" id="fraseBora5">
+            <button type="button" onclick="bora5()">Avançar</button>
         </div>
         <div class="row" style="display: none;" id="frase5">
             <span>Você vê algumas pessoas fugindo e pergunta o que está acontecendo... </span><button type="button" onclick="testeCarisma1()">TESTE CARISMA</button>
