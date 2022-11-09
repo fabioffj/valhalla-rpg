@@ -20,12 +20,12 @@ var carisma3 = document.getElementById("carisma3")
 function nome(){
     nome1 = document.getElementById("nome")
     nome2 = nome1.value
-    nome3.innerHTML = `${nome2}`
+    nome3.innerHTML = nome2
 }
 
 function comecar2(){
     vida2 = vida
-    vida3.innerHTML = `${vida2}`
+    vida3.innerHTML = vida2
     var fraseBora1 = document.getElementById("fraseBora1")
     fraseBora1.style.display = "block";
 
@@ -64,37 +64,37 @@ function bora6(){
 function forca(){    
     var forca1 = document.getElementById("forca")
     forca2 = forca1.value
-    forca3.innerHTML = `${forca2}`
+    forca3.innerHTML = forca2
 }
 
 function agilidade(){
     var agilidade1 = document.getElementById("agilidade")
     agilidade2 = agilidade1.value
-    agilidade3.innerHTML = `${agilidade2}`
+    agilidade3.innerHTML = agilidade2
 }
 
 function resistencia(){
     var resistencia1 = document.getElementById("resistencia")
     resistencia2 = resistencia1.value
-    resistencia3.innerHTML = `${resistencia2}`
+    resistencia3.innerHTML = resistencia2
 }
 
 function inteligencia(){
     var inteligencia1 = document.getElementById("inteligencia")
     inteligencia2 = inteligencia1.value
-    inteligencia3.innerHTML = `${inteligencia2}`
+    inteligencia3.innerHTML = inteligencia2
 }
 
 function sabedoria(){
     var sabedoria1 = document.getElementById("sabedoria")
     sabedoria2 = sabedoria1.value
-    sabedoria3.innerHTML = `${sabedoria2}`
+    sabedoria3.innerHTML = sabedoria2
 }
 
 function carisma(){
     var carisma1 = document.getElementById("carisma")
     carisma2 = carisma1.value
-    carisma3.innerHTML = `${carisma2}`
+    carisma3.innerHTML = carisma2
 }
 
 function testeSabedoria1(){
@@ -115,7 +115,7 @@ function testeSabedoria1(){
 function cincoDeDano(){
     vida -= 5;
     vida2 = vida
-    vida3.innerHTML = `${vida2}`
+    vida3.innerHTML = vida2
 }
 
 function testeInteligencia1(){
@@ -133,30 +133,30 @@ function testeInteligencia1(){
     inteligencia2 = inteligencia1.value
 }
 
-/*function maisUmAtributos1(){
+function maisUmAtributos1(){
     var forca1 = document.getElementById("forca")
-    forca2 = forca1.value + 1
-    forca3.innerHTML = `${forca2}`
+    forca2 = forca1.value + 1;
+    forca3.innerHTML = forca2
     var agilidade1 = document.getElementById("agilidade")
-    agilidade2 = agilidade1.value + 1
-    agilidade3.innerHTML = `${agilidade2}`
+    agilidade2 = agilidade1.value + 1;
+    agilidade3.innerHTML = agilidade2
     var resistencia1 = document.getElementById("resistencia")
-    resistencia2 = resistencia1.value + 1
-    resistencia3.innerHTML = `${resistencia2}`
+    resistencia2 = resistencia1.value + 1;
+    resistencia3.innerHTML = resistencia2
 
 }
 
 function maisUmAtributos2(){
     var inteligencia1 = document.getElementById("inteligencia")
-    inteligencia2 = inteligencia1.value + 1
-    inteligencia3.innerHTML = `${inteligencia2}`
+    inteligencia2 = inteligencia1.value + 1;
+    inteligencia3.innerHTML = inteligencia2
     var sabedoria1 = document.getElementById("sabedoria")
-    sabedoria2 = sabedoria1.value + 1
-    sabedoria3.innerHTML = `${sabedoria2}`
+    sabedoria2 = sabedoria1.value + 1;
+    sabedoria3.innerHTML = sabedoria2
     var carisma1 = document.getElementById("carisma")
-    carisma2 = carisma1.value + 1
-    carisma3.innerHTML = `${carisma2}`
-}*/
+    carisma2 = carisma1.value + 1;
+    carisma3.innerHTML = carisma2
+}
 
 function testeForca1(){
     var fraseBora4 = document.getElementById("fraseBora4")
