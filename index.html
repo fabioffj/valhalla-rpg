@@ -3,143 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valhalla RPG</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/x-icon" href="./imagens/dice-eight-faces-eight.svg">
+    <title>Valhalla RPG </title>
+    <link rel="icon" type="image/x-icon" href="./Imagens/dice-eight-faces-eight.svg">
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div>
-                    <label for="nome">Nome do Personagem: </label><input type="text" id="nome"><button type="button" onclick="nome()">Salvar</button>
+    
+    <body>
+        <div class="container box animate fadeInUp one">
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="Imagens/logo.png">
+                        <h3>Valhalla</h3>
+                    </div>
                 </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Vencedor do GOAT 2022</p>
+                            <a href="./index2.html">Jogar agora</a>
+                    </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <div>Atributos: *20 pontos para distribuir (máximo 5)
-                <div class="slidecontainer">
-                    <label for="forca">FORÇA: </label><input type="number" min="0" max="5" value="0" id="forca"><button type="button" onclick="forca()">Salvar</button>
-                </div>
-                <div class="slidecontainer">
-                    <label for="agilidade">AGILIDADE: </label><input type="number" min="0" max="5" value="0" id="agilidade"><button type="button" onclick="agilidade()">Salvar</button>
-                </div>
-                <div class="slidecontainer">
-                    <label for="resistencia">RESISTÊNCIA: </label><input type="number" min="0" max="5" value="0" id="resistencia"><button type="button" onclick="resistencia()">Salvar</button>
-                </div>
-                <div class="slidecontainer">
-                    <label for="inteligencia">INTELIGÊNCIA </label><input type="number" min="0" max="5" value="0" id="inteligencia"><button type="button" onclick="inteligencia()">Salvar</button>
-                </div>
-                <div class="slidecontainer">
-                    <label for="sabedoria">SABEDORIA: </label><input type="number" min="0" max="5" value="0" id="sabedoria"><button type="button" onclick="sabedoria()">Salvar</button>
-                </div>
-                <div class="slidecontainer">
-                    <label for="carisma">CARISMA: </label><input type="number" min="0" max="5" value="0" id="carisma"><button type="button" onclick="carisma()">Salvar</button>
-                </div>
-                </div>
-                <div>
-                    <button type="button" onclick="comecar2()">Começar a Aventura!</button>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div for="vida">Vida = <span id="vida"></span></div>
-                <div>
-                    <span for="forca3">Força </span><span id="forca3"></span>,
-                    <span for="agilidade3">Agilidade </span><span id="agilidade3"></span>,
-                    <span for="resistencia3">Resistência </span><span id="resistencia3"></span>,
-                    <span for="inteligencia3">Inteligência </span><span id="inteligencia3"></span>,
-                    <span for="sabedoria3">Sabedoria </span><span id="sabedoria3"></span>,
-                    <span for="carisma3">Carisma </span><span id="carisma3"></span>.
-                </div>
-                <div id="fraseBora1" style="display: none;">
-                    <span>Olá, </span><span id="nome3"></span><span>, sua aventura começa agora!</span> <button type="button" onclick="bora1()">Iniciar</button>
-                </div>
-            </div>
-        </div>        
-        <div class="row" style="display: none;" id="frase1">
-            <span>Ao acordar, você sente um cheiro familiar... </span><button type="button" onclick="testeSabedoria1()">TESTE SABEDORIA</button>
-            <div style="display: none;" id="sucessoTesteSabedoria1">Sucesso: Você percebe um cheiro de queimado e rapidamente se levanta da sua cama, escapando por pouco de uma labareda!</div>
-            <div style="display: none;" id="falhaTesteSabedoria1">Falha: você não dá bola para o cheiro e, logo depois, é atingido por uma labareda de fogo no meio da sua cama... <button type="button" onclick="cincoDeDano()">5 PONTOS DE DANO</button></div>            
-        </div>
-        <div class="row" style="display: none;" id="fraseBora2">
-            <button type="button" onclick="bora2()">Avançar</button>
-        </div>
-        <div class="row" style="display: none;" id="frase2">
-            <span>Você sai de sua casa em desespero... </span><button type="button" onclick="testeInteligencia1()">TESTE INTELIGÊNCIA</button>
-            <div style="display: none;" id="sucessoTesteInteligencia1">Sucesso: mas, não antes de pegar sua espada e armadura. <button type="button" onclick="maisUmAtributos1()">+1 EM FOR, AGI e RES</button></div>
-            <div style="display: none;" id="falhaTesteInteligencia1">Falha: deixando tudo para trás...</div>
-        </div>
-        <div class="row" style="display: none;" id="fraseBora3">
-            <button type="button" onclick="bora3()">Avançar</button>
-        </div>
-        <div class="row" style="display: none;" id="frase3">
-            <span>A porta está emperrada... </span><button type="button" onclick="testeForca1()">TESTE FORÇA</button>
-            <div style="display: none;" id="sucessoTesteForca1">Sucesso: mas você consegue arrombar com facilidade!</div>
-            <div style="display: none;" id="falhaTesteForca1">Falha: e você arromba com dificuldade, machucando seu ombro... <button type="button" onClick="cincoDeDano()">5 PONTOS DE DANO</button></div>
-        </div>
-        <div class="row" id="fraseBora4" style="display: none;">
-            <button type="button" onclick="bora4()">Avançar</button>
-        </div>
-        <div class="row" style="display: none;" id="frase4">
-            <span>Destroços em chamas caem sobre você... </span><button type="button" onclick="testeAgilidade1()">TESTE AGILIDADE</button>
-            <div style="display: none;" id="sucessoTesteAgilidade1">Sucesso: e você, velozmente, esquiva!</div>
-            <div style="display: none;" id="falhaTesteAgilidade1">Falha: acertando em cheio sua cabeça... <button type="button" onClick="cincoDeDano()">5 PONTOS DE DANO</button></div>
-        </div>
-        <div class="row" style="display: none;" id="fraseBora5">
-            <button type="button" onclick="bora5()">Avançar</button>
-        </div>
-        <div class="row" style="display: none;" id="frase5">
-            <span>Você vê algumas pessoas fugindo e pergunta o que está acontecendo... </span><button type="button" onclick="testeCarisma1()">TESTE CARISMA</button>
-            <div style="display: none;" id="sucessoTesteCarisma1">Sucesso: elas lhe informam que uma criatura maligna está atacando a vila! <button type="button" onclick="maisUmAtributos2()">+1 EM INT, SAB e CAR</button></div>
-            <div style="display: none;" id="falhaTesteCarisma1">Falha: mas elas não dão bola para você...</div>
-        </div>
-        <div class="row" style="display: none;"  id="proximaFrase">            
-            <div>Ao sair, você se depara com um monstro alado cuspindo fogo na sua vila!</div>
-            <div>Você tem as seguintes OPÇÕES: <button type="button" onclick="bora6()">Avançar</button></div>
-        </div>
-        <div class="row" style="display: none;" id="frase6">
-            <div class="row">
-                <span>Ataca a criatura com o que tiver em mãos... </span><button type="button" onclick="testeForca2()">TESTE FORÇA</button>
-                <div style="display: none;" id="sucessoTesteForca2">Sucesso: você acerta em cheio um ponto vital do monstro levando-o ao chão! <button type="button" onclick="parabens()">Resultado</button></div>
-                <div style="display: none;" id="falhaTesteForca2">Falha: seu ataque não surte efeito e você fica à mercê do monstro que ataca sem piedade... <button type="button" onclick="testeAgilidade2()">TESTE AGILIDADE</button></div>
-                <div style="display: none;" id="sucessoTesteAgilidade2">Sucesso: sua rapidez faz com que se esquive e você consegue fugir! <button type="button" onclick="parabens2()">Resultado</button></div>
-                <div style="display: none;" id="falhaTesteAgilidade2">Falha: o ataque foi certeiro, você sente a vida se esvair... <button type="button" onclick="testeResistencia1()">TESTE RESISTÊNCIA!</button></div>
-                <div style="display: none;" id="sucessoTesteResistencia1">Sucesso: mas, milagrosamente, você sobrevive e, quando acorda, encontra sua vila devastada! <button type="button" onclick="parabens3()">Resultado</button></div>
-                <div style="display: none;" id="falhaTesteResistencia1">Falha: ... <button type="button" onclick="morreu()">Resultado</button></div>
-            </div>
-            <div class="row">
-                <span>Analisa a criatura... </span><button type="button" onclick="testeInteligencia2()">TESTE INTELIGÊNCIA</button>
-                <div style="display: none;" id="sucessoTesteInteligencia2">Sucesso: você percebe uma fraqueza no monstro e ataca com vantagem o monstro, levando-o ao chão! <button type="button" onclick="parabens()">Resultado</button></div>
-                <div style="display: none;" id="falhaTesteInteligencia2">Falha: você não percebe nenhum detalhe importante da criatura e ela te ataca ferozmente... <button type="button" onclick="testeAgilidade3()">TESTE AGILIDADE</button></div>
-                <div style="display: none;" id="sucessoTesteAgilidade3">Sucesso: sua rapidez faz com que se esquive e você consegue fugir! <button type="button" onclick="parabens2()">Resultado</button></div>
-                <div style="display: none;" id="falhaTesteAgilidade3">Falha: o ataque foi certeiro, você sente a vida se esvair... <button type="button" onclick="testeResistencia2()">TESTE RESISTÊNCIA!</button></div>
-                <div style="display: none;" id="sucessoTesteResistencia2">Sucesso: mas, milagrosamente, você sobrevive e, quando acorda, encontra sua vila devastada! <button type="button" onclick="parabens3()">Resultado</button></div>
-                <div style="display: none;" id="falhaTesteResistencia2">Falha: ... <button type="button" onclick="morreu()">Resultado</button></div>
-            </div>
-            <div class="row">
-                <span>Tenta lembrar que criatura é essa... </span><button type="button" onclick="testeSabedoria2()">TESTE SABEDORIA</button>
-                <div style="display: none;" id="sucessoTesteSabedoria2">Sucesso: você lembra de um cântico sagrado que afugenta o monstro! <button type="button" onclick="parabens()">Resultado</button></div>
-                <div style="display: none;" id="falhaTesteSabedoria2">Falha: você lembra de um cântico sagrado, mas sua voz sai rouca e não surte efeito contra o monstro que te ataca violentamente... <button type="button" onclick="testeAgilidade4()">TESTE AGILIDADE</button></div>
-                <div style="display: none;" id="sucessoTesteAgilidade4">Sucesso: sua rapidez faz com que se esquive e você consegue fugir! <button type="button" onclick="parabens2()">Resultado</button></div>
-                <div style="display: none;" id="falhaTesteAgilidade4">Falha: o ataque foi certeiro, você sente a vida se esvair... <button type="button" onclick="testeResistencia3()">TESTE RESISTÊNCIA!</button></div>
-                <div style="display: none;" id="sucessoTesteResistencia3">Sucesso: mas, milagrosamente, você sobrevive e, quando acorda, encontra sua vila devastada! <button type="button" onclick="parabens3()">Resultado</button></div>
-                <div style="display: none;" id="falhaTesteResistencia3">Falha: ... <button type="button" onclick="morreu()">Resultado</button></div>
-            </div>
-            <div class="row">
-                <span>Tenta afugentar a criatura... </span><button type="button" onclick="testeCarisma2()">TESTE CARISMA</button>
-                <div style="display: none;" id="sucessoTesteCarisma2">Sucesso: você consegue amedrontar o monstro que foge! <button type="button" onclick="parabens()">Resultado</button></div>
-                <div style="display: none;" id="falhaTesteCarisma2">Falha: e o monstro ri da sua cara e ataca... <button type="button" onclick="testeAgilidade5()">TESTE AGILIDADE</button></div>
-                <div style="display: none;" id="sucessoTesteAgilidade5">Sucesso: sua rapidez faz com que se esquive e você consegue fugir! <button type="button" onclick="parabens2()">Resultado</button></div>
-                <div style="display: none;" id="falhaTesteAgilidade5">Falha: o ataque foi certeiro, você sente a vida se esvair... <button type="button" onclick="testeResistencia4()">TESTE RESISTÊNCIA!</button></div>
-                <div style="display: none;" id="sucessoTesteResistencia4">Sucesso: mas, milagrosamente, você sobrevive e, quando acorda, encontra sua vila devastada! <button type="button" onclick="parabens3()">Resultado</button></div>
-                <div style="display: none;" id="falhaTesteResistencia4">Falha: ... <button type="button" onclick="morreu()">Resultado</button></div>
-            </div>
-        </div>
-    </div>
-    <script src="./script.js"></script>
+    </body>
+    
 </body>
 </html>
